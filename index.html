@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div id="controls">
+        <input type="text" id="search" placeholder="Search for a location">
+        <button id="searchButton">Search</button>
+        <button id="saveMarkers">Save Markers</button>
+        <button id="loadMarkers">Load Markers</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="locationList">
+        <h3>Saved Locations:</h3>
+        <ul id="locationListItems"></ul>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
